@@ -470,7 +470,7 @@
                                 </div>
                                 <div class="back">
                                     <a href="{{route('product.details',['slug'=>$product->slug])}}">
-                                        <img src="assets/images/fashion/product/back/{{$product->images}}"
+                                        <img src="assets/images/fashion/product/back/{{$product->image}}"
                                             class="bg-img blur-up lazyload" alt="">
                                     </a>
                                 </div>
@@ -523,7 +523,7 @@
                                         <span class="font-light">{{$product->category->name}}</span>
                                         <p class="font-light">{{$product->short_desc}}</p>
                                     </div>
-                                    <h3 class="theme-color">{{$product->sale_price}}</h3>
+                                    <h3 class="theme-color">{{$product->regular_price}}</h3>
                                     <button class="btn listing-content">Add To Cart</button>
                                 </div>
                             </div>
