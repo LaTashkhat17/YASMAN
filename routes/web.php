@@ -22,6 +22,8 @@ use Illuminate\Support\Facades\Auth;
 Route::get('/', [AppController::class, 'index'])->name('index');
 Route::get('/shop', [ShopController::class, 'index'])->name('shop.index');
 Route::get('/product/{slug}', [ShopController::class, 'productDetails'])->name('product.details');
+Route::get('/cart', [\App\Http\Controllers\CartController::class, 'index'])->name('cart.index');
+Route::post('/cart/store', [\App\Http\Controllers\CartController::class, 'store'])->name('cart.store');
 
 Auth::routes();
 
